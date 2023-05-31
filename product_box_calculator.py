@@ -52,11 +52,11 @@ window.geometry("300x500")
 label = tk.Label(window, text="제품 갯수 계산기")
 label.place(relx=0.5, rely=0.1, anchor=tk.CENTER)  # 가운데 정렬
 
-label = tk.Label(window, text="입력 예시 : 제리캔 5L 제리캔5L")
+label = tk.Label(window, text="입력 예시 : 제리캔 5L, 제리캔5L")
 label.place(relx=0.5, rely=0.2, anchor=tk.CENTER)
 
-label = tk.Label(window, text="L는 무조건 붙여주세요!!")
-label.place(relx=0.5, rely=0.25, anchor=tk.CENTER)
+label = tk.Label(window, text="made by Min")
+label.place(relx=0.15, rely=0.02, anchor=tk.CENTER)
 
 # 입력 상자 생성
 entry_product_name = tk.Entry(window)
