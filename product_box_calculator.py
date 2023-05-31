@@ -1,6 +1,9 @@
 import tkinter as tk
 import openpyxl
 
+import tkinter as tk
+import openpyxl
+
 def search_excel():
     product_name = entry_product_name.get()
     search_keywords = product_name.split()  # 공백을 기준으로 검색어를 분리
@@ -15,18 +18,18 @@ def search_excel():
     for sheet_name in wb.sheetnames:
         sheet = wb[sheet_name]
 
-        # 엑셀에서 정보 검색
+        # 엑셀에서 정보 검색 (B열만 탐색)
         for row in sheet.iter_rows(values_only=True):
-            row_values = [str(cell).replace(" ", "") for cell in row]  # 띄어쓰기 제거
+            cell_value = str(row[1]).replace(" ", "")  # B열 값 가져오기
 
-            if all(any(keyword in cell for cell in row_values) for keyword in search_keywords):
-                results.append((row[1], row[6]))
+            if all(keyword in cell_value for keyword in search_keywords):
+                results.append((row[1], row[6]))  # B열(row[1])과 G열(row[6]) 값 저장
 
     # 결과 출력
     if results:
         result_text = "<결과>\n"
         for row in results:
-            result_text += ' , '.join(str(cell) for cell in row) + "EA" + '\n'
+            result_text += str(row[0]) + "EA, " + str(row[1]) + "EA" + '\n'  # B열(row[0])과 G열(row[1]) 값을 출력
         label_result.config(text=result_text)
     else:
         label_result.config(text="일치하는 제품을 찾을 수 없습니다.")
