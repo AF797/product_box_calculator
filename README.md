@@ -8,6 +8,8 @@
 
 간편하게 해결하기 위해 Python으로 간단하게 엑셀에서 Search 해 올 수 있는 프로그램을 만들어 보았다.
 
+(회사 보안으로 인해 엑셀 파일은 임시로 제작한 것으로 대체했다.)
+
 ## 구현 사진
 ![1111](https://github.com/AF797/product_box_calculator/assets/86837707/7818ea0f-7ee9-4886-9e56-279029cbd1c7)
 
