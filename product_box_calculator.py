@@ -1,9 +1,6 @@
 import tkinter as tk
 import openpyxl
 
-import tkinter as tk
-import openpyxl
-
 def search_excel():
     product_name = entry_product_name.get()
     search_keywords = product_name.split()  # 공백을 기준으로 검색어를 분리
