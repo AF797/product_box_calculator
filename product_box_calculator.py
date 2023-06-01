@@ -1,4 +1,5 @@
 import tkinter as tk
+from PIL import ImageTk, Image
 import openpyxl
 
 def search_excel():
@@ -47,6 +48,16 @@ window.iconbitmap(default=icon_path)
 
 # 창의 크기 설정
 window.geometry("300x500")
+
+# 회사 로고
+image_path = "kr_rogo.jpg"  # 이미지 파일 경로
+image = Image.open(image_path)
+image = image.resize((100, 60))  # 이미지 크기 조정
+photo = ImageTk.PhotoImage(image)
+
+# 이미지를 표시할 라벨 생성
+label_image = tk.Label(window, image=photo)
+label_image.place(relx=0.5, rely=0.1, anchor=tk.CENTER)
 
 # 안내 문구를 표시할 라벨 생성
 label = tk.Label(window, text="제품 갯수 계산기")
