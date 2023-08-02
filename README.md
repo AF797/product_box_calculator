@@ -18,7 +18,7 @@
 </p>
 <p align="center">
   <a href="https://www.spyder-ide.org/" target="_blank">
-    <img src="https://img.shields.io/badge/Spyder IDE Download-3178C6?style=flat-for-the-badge&logo=spyderide&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Spyder IDE Download-3178C6?style=flat-for-the-badge&logo=spyderide&logoColor=#FF0000"/>
   </a>
 </p>
 
