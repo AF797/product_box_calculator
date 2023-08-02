@@ -10,6 +10,39 @@
 
 (회사 보안으로 인해 엑셀 파일은 임시로 제작한 것으로 대체했다.)
 
+## 환경
+<p align="center">
+  <a href="https://www.spyder-ide.org/" target="_blank">
+    <img src=".png" width="200" height="200"/>
+  </a>
+</p>
+<p align="center">
+  <a href="https://www.spyder-ide.org/" target="_blank">
+    <img src="https://img.shields.io/badge/Spyder IDE Download-3178C6?style=flat-for-the-badge&logo=spyderide&logoColor=white"/>
+  </a>
+</p>
+
+- tkinter
+```
+pip install tk
+```
+- PIL
+```
+pip install Pillow
+```
+- openpyxl
+```
+pip install openpyxl
+```
+- pyinstaller
+```
+pip install pyinstaller
+```
+- Making EXE file
+```
+pyinstaller --add-binary "path\\PIL;PIL" --add-binary "path\\openpyxl;openpyxl" -F -w --icon=아이콘명.ico ppap.py
+```
+
 ## 구현 사진
 ![1111](https://github.com/AF797/product_box_calculator/assets/86837707/7818ea0f-7ee9-4886-9e56-279029cbd1c7)
 
