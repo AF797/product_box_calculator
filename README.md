@@ -13,7 +13,7 @@
 ## 환경
 <p align="center">
   <a href="https://www.spyder-ide.org/" target="_blank">
-    <img src=".png" width="200" height="200"/>
+    <img src="img/Spyder.png" width="200" height="200"/>
   </a>
 </p>
 <p align="center">
